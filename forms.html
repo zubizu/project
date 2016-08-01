@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Резюме </title>
+	<meta http-equiv="Content-Type" content="taxt/html; charset=utf-8">
+</head>
+<body>
+	<h1> Резюме </h1>
+
+	<form>
+		<p> Загрузите Ваше фото </p>
+		<input type='file' multiple='multiple'/> <br/> <br/>
+
+		<p> Укажите ваш пол </p>
+			<select name="sex">
+				<option value="m"> мужской </option>
+				<option value="f">женский</option>		
+			</select> 
+
+		
+		<p> 
+		Имя:<br/><input type="text" name="firstname"/> <br/>
+		Фамилия:<br/> <input type="text" name="lastname"> <br/>
+		Отчество:<br/> <input type="text" name="lastname"> <br/>
+		</p>
+
+		<p> Дата рождения: </p>
+		<input type='date'/> <br/>
+		<p> Город: </p>
+		<input name="city" list="city"/>
+			<datalist id="city">
+				<option label="Москва" value="Москва, Россия"/>
+				<option label="Санкт-Петербург" value="Санкт-Петербург, Россия"/>
+				<option label="Омск" value="Омская область, Россия"/>
+				<option label="Новосибирск" value="Новосибирская область, Россия"/>
+				<option label="Казань" value="Казань, Россия"/>
+				<option label="Уфа" value="Уфа, Россия"/>
+			</datalist>
+
+	<p> Введите ваш e-mail </p>		
+	<input type='email' placeholder='введите ваш email'/> <br/> <br/>
+
+
+<p>Опыт работы <br/>
+Начало работы:
+<input type='date'/> <br/>
+Окнчание:
+<input type='date'/> <br/>
+</p>
+
+<p> Образование: </p>
+
+<input type="radio" name="education" value="he" /> Высшее <br/>
+<input type="radio" name="education" value="ihe"/> Неконченное высшее <br/>
+<input type="radio" name="education" value="pe" /> Среднее профессиональное <br/>
+
+	<p>
+<input type="submit" value="Отправить"/>
+</p>
+
+
+</form>
+
+</body>
+</html>
